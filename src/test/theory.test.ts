@@ -3,31 +3,27 @@ import { describe, it, expect, vi } from 'vitest';
 describe('Theory JS / TS Verifications', () => {
   it('verifies equality comparisons as detailed in technical specification', () => {
     // '01' == 1 vs '01' === 1
-    // @ts-expect-error testing loose equality per task spec
+    // @ts-expect-error testing loose equality across types
     expect('01' == 1).toBe(true);
-    // @ts-expect-error testing strict equality per task spec
+    // @ts-expect-error testing strict equality across types
     expect('01' === 1).toBe(false);
 
-    // null === undefined vs null == undefined
-    // @ts-expect-error testing strict equality
+    // null === undefined vs null == undefined (both valid in TS)
     expect(null === undefined).toBe(false);
-    // @ts-expect-error testing loose equality
     expect(null == undefined).toBe(true);
 
     // null relational comparisons
-    // @ts-expect-error testing comparison
+    // @ts-expect-error testing relational comparison
     expect(null > 0).toBe(false);
-    // @ts-expect-error testing equality
     expect(null == 0).toBe(false);
-    // @ts-expect-error testing comparison
+    // @ts-expect-error testing relational comparison
     expect(null >= 0).toBe(true);
 
     // undefined relational comparisons
-    // @ts-expect-error testing comparison
+    // @ts-expect-error testing relational comparison
     expect(undefined > 0).toBe(false);
-    // @ts-expect-error testing comparison
+    // @ts-expect-error testing relational comparison
     expect(undefined < 0).toBe(false);
-    // @ts-expect-error testing equality
     expect(undefined == 0).toBe(false);
   });
 
