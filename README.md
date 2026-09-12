@@ -5,7 +5,7 @@
 Кандидат: **Максим Гончаров**
 
 ## Live Demo
-- **Production URL на Vercel:** [https://test-task-frontend-razrabotchik-javascri-mtyqgwdw.vercel.app](https://test-task-frontend-razrabotchik-javascri-mtyqgwdw.vercel.app) *(или актуальный URL после деплоя)*
+- **Production URL на Vercel:** [https://test-task-frontend-razrabotchik-jav.vercel.app](https://test-task-frontend-razrabotchik-jav.vercel.app)
 - **Учетные данные для проверки:**
   - **Логин:** `admin`
   - **Пароль:** `admin`
